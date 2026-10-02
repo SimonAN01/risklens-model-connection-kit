@@ -1,0 +1,24 @@
+{
+  "name": "@risklens/model-connection-kit",
+  "version": "0.1.0",
+  "description": "Reusable Vue 3 model connection UI and logic for OpenAI-compatible code model evaluation.",
+  "type": "module",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": { "import": "./dist/index.js" },
+    "./style.css": "./dist/style.css"
+  },
+  "files": ["dist", "src", "examples", "README.md", "LICENSE"],
+  "sideEffects": ["*.css"],
+  "scripts": {
+    "build": "vite build",
+    "check": "node --check src/model-presets.js && node --check src/transport.js && node --check src/useModelConnection.js && node --check src/index.js"
+  },
+  "peerDependencies": { "vue": ">=3.3.0" },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.2.1",
+    "vite": "6.0.7",
+    "vue": "3.5.13"
+  },
+  "license": "MIT"
+}
