@@ -15,8 +15,10 @@
 ## 安装
 
 ```bash
-npm install @risklens/model-connection-kit vue
+npm install github:SimonAN01/risklens-model-connection-kit vue
 ```
+
+> 当前版本已上传 GitHub，可通过 GitHub 地址安装；尚未发布到 npm 公共仓库。
 
 ## 使用
 
